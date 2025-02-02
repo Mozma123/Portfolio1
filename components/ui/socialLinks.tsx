@@ -1,35 +1,19 @@
 import React from "react";
 import Link from "next/link";
-import { Github, Instagram, Linkedin, Mail, Youtube } from "lucide-react";
+import { Github, Instagram, Linkedin, Youtube } from "lucide-react";
 import { Tooltip, TooltipProvider, TooltipTrigger, TooltipContent } from "@radix-ui/react-tooltip";
 
 const socialData = [
   {
     title: "Github",
     icon: <Github />,
-    href: "https://github.com/Memoona-tech",
+    href: "https://github.com/Mozma123",
   },
   {
     title: "LinkedIn",
     icon: <Linkedin />,
-    href: "https://www.linkedin.com/in/memoonasaleem/",
-  },
-  {
-      title: "Email",
-      icon: <Mail/>,
-      href: "mailto:cuteskiesquery@gmail.com",
-    },
-  {
-    title: "YouTube",
-    icon: <Youtube />,
-    href: "https://www.youtube.com/@SkyCarly",
-  },
-  {
-    title: "Instagram",
-    icon: <Instagram />,
-    href: "https://www.instagram.com",
-  },
-  
+    href: "https://www.linkedin.com/in/moazma-amin-7573b72b4/",
+  }
 ];
 
 const SocialLinks = () => {
@@ -51,9 +35,9 @@ const SocialLinks = () => {
                 rounded-full"
                 >
     
-              {item?.href && <Link href={item.href} target="_blank">
+              <Link href={item?.href} target="_blank">
                 <span>{item?.icon}</span>
-              </Link>}
+              </Link>
             </div>
             </TooltipTrigger>
             <TooltipContent className="lowercase">{item?.title}</TooltipContent>
