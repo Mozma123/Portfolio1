@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { Github, Instagram, Linkedin, Youtube } from "lucide-react";
+import { Github, Linkedin  } from "lucide-react";
 import { Tooltip, TooltipProvider, TooltipTrigger, TooltipContent } from "@radix-ui/react-tooltip";
 
 const socialData = [
