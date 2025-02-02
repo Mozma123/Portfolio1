@@ -13,10 +13,21 @@ import React from "react";
 import { useState } from "react";
 import Image from "next/image";
 
-import project1 from "./images/project1.png";
-import project2 from "./images/project2.png";
-import project3 from "./images/project3.png";
-import project4 from "./images/project4.png";
+import project1 from "./images/1.jpeg";
+import project2 from "./images/2.jpeg";
+import project3 from "./images/3.jpeg";
+import project4 from "./images/4.jpeg";
+import project5 from "./images/5.jpeg";
+import project6 from "./images/6.jpeg";
+import project7 from "./images/7.jpeg";
+import project8 from "./images/8.jpeg";
+import project9 from "./images/9.jpeg";
+import project10 from "./images/10.jpeg";
+import project11 from "./images/11.jpeg";
+import project12 from "./images/12.jpeg";
+import project13 from "./images/13.png";
+
+
 import { Separator } from "@radix-ui/react-separator";
 import {
   Tooltip,
@@ -30,43 +41,106 @@ import { Button } from "@/components/ui/button";
 const Projects = [
   {
     id: "01",
-    title: "Notes App",
-    category: "Full Stack",
+    title: "",
+    category: "e-commerce perfume website",
     description:
-      "A simple and aesthetic notes app that allows users to create, edit, and delete notes. Using the cool features of JavaScript to make it happen while using HTML and CSS to make it interactive for user.",
-    stack: ["HTML", "CSS", "JavaScript"],
+      "I've built a fully responsive e-commerce perfume website using HTML, CSS, and JavaScript. 💻🛍️ The website is designed to offer an immersive shopping experience for perfume lovers.",
     image: project1,
-    githubUrl: "https://github.com/Memoona-tech/Notes-App",
+    githubUrl: "https://github.com/Mozma123/ecomerence-perfume-website-",
   },
   {
     id: "02",
-    title: "Analog Clock",
-    category: "Full Stack",
+    category: "Todo app",
     description:
-      "A simple and clean analogue clock that displays the current time. Using mathematical formula to measure the actual time but making it happen through JS, design provided by CSS.",
-    stack: ["HTML", "CSS", "JavaScript"],
+      "🔹 The app allows users to add, edit, and delete tasks, with a minimal and user-friendly design.🔹 State management is handled using useState, while useEffect ensures the tasks persist across page reloads by syncing with local storage.",
     image: project2,
-    githubUrl: "https://github.com/Memoona-tech/Analog-Clock",
+    githubUrl: "",
   },
   {
     id: "03",
-    title: "Weather App",
-    category: "Full Stack",
-    description:
-      "Weather app that allows users to search for the weather of any city in the world. Huge role of API and functionality of JavaScript combined with the beauty oh HTML and CSS. ",
-    stack: ["HTML", "CSS", "JavaScript" , "API"],
+    category: "image gallery",
+    description:"Create an image gallery where users can view a collection of images. Use HTML/CSS for layout and JavaScript for image navigation and any interactive features.",
     image: project3,
-    githubUrl: "https://github.com/Memoona-tech/Weather-App",
+    githubUrl: "https://github.com/Mozma123/galleriya",
   },
   {
     id: "04",
-    title: "Calculator App",
-    category: "Full Stack",
+
+    category: " Currency exchange",
+    description:  "Currency exchange rate app.Using Html,Css,js and Fetch APi.",
+    image: project4,
+    githubUrl: "https://github.com/Mozma123/currency-exchanger",
+  },
+  {
+    id: "05",
+    category: "Quiz website",
+    description:
+      "I've created a simple quiz website using HTML, CSS, and JavaScript .",
+    image: project5,
+    githubUrl: "https://github.com/Mozma123/quiz2",
+  },
+  {
+    id: "06",
+    category: "Calculator",
+    description:"I create a Calculator. Using html for sturucture ,css for styling and JS for functionality.",
+    image: project6,
+    githubUrl: "https://github.com/Mozma123/CodSoft/tree/main/calculator",
+  },
+  {
+    id: "07",
+    category: "Digital clock",
+    description:   "Language use:   ➡️Html  ➡️Css ➡️js",
+    image: project7,
+    githubUrl: "",
+  },
+  {
+    id: "08",
+    category: "Landing page",
+    description:
+      "I developed an interactive landing page using HTML, CSS, and animation I structured the layout with HTML to create a main display area . CSS was used for styling and ensure the landing page is visually appealing and responsive.",
+    image: project8,
+    githubUrl: "https://github.com/Mozma123/CodSoft/tree/main/landing%20page/codsoft",
+  },
+  {
+    id: "09",
+    category: " Toggle",
+    description:
+      " I create Toggle using html css and js. ",
+    image: project9,
+    githubUrl: "https://github.com/Mozma123/Toggle-button",
+  },
+  {
+    id: "10",
+    category: "scratch Story",
     description:
       "A simple and clean calculator app that performs basic arithmetic operations on interger as well as floating point numbers.",
-    stack: ["HTML", "CSS", "JavaScript"],
-    image: project4,
-    githubUrl: "https://github.com/Memoona-tech/Calculator",
+    image: project10,
+    githubUrl: "",
+  },
+  {
+    id: "11",
+    category: "Flower website",
+    description:
+      " Take a look at my newest creation: A flower website landing page I crafted using HTML, CSS, bootstrap and media queries for full responsiveness! 💻",
+    image: project11,
+    githubUrl: ""
+  },
+  {
+    id: "12",
+    category: "2D/3D Animation box",
+    description:
+      "A simple and clean calculator app that performs basic arithmetic operations on interger as well as floating point numbers.",
+    image: project12,
+    githubUrl: "",
+  },
+  {
+    id: "13",
+    category: "Taskmanger app",
+    description:
+      "Taskmanger",
+    stack: [""],
+    image: project13,
+    githubUrl: "https://github.com/Mozma123/tasko",
   },
 ];
 
@@ -148,12 +222,18 @@ const ProjectPage = () => {
 
                       <div className="w-full md:w-1/2 order-1 md:order-2 ">
                         <div className="relative h-64  md:h-96 bg-gray-700 rounded-lg overflow-hidden">
-                          <Image
+                          {/* <Image
                             src={project?.image}
                             alt={project.title}
                             fill
                             className="object-cover"
-                          />
+                          /> */}
+                          <Image
+  src={project?.image || '/default-image.jpg'} // Image fallback handle karta hai
+  alt={project?.title || 'Default Title'} // Alt attribute ka fallback
+  fill // Next.js Image ke liye "fill" prop sahi hai
+  className="object-cover"
+/>
                         </div>
                       </div>
                     </div>
