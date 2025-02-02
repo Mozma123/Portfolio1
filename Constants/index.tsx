@@ -7,9 +7,9 @@ export const navbarData = [
 ];
 
 export const statsData = [
-  { num: 1, title: "Year(s) of Experience" },
-  { num: 4, title: "Projects Completed" },
-  { num: 6, title: "Technologies mastered" },
+  { num: 1, title: "Month(s) of Experience" },
+  { num: 13, title: "Projects Completed" },
+  { num: 9, title: "Technologies mastered" },
 ];
 
 export const experienceData = [
@@ -17,14 +17,15 @@ export const experienceData = [
     id: "01",
     title: "Frontend Developer",
     description:
-      "Frontend Developer with 1 year of experience in building websites and web applications. I specialize in HTML, CSS, and JavaScript.",
+      "Designed and developed a responsive calculator application using HTML, CSS, and  JavaScript, ensuring cross-browser compatibility and optimal user experience.",
   },
   {
     id: "02",
-    title: "Fullstack Developer",
+    title: "WEBSITE DESIGNING",
     description:
-      "I learnt Fullstack Development with experience by building different websites and web applications involving the use of different technologies such as Next.js, TypeScript, JavaScript, Tailwind CSS, HTML ",
+      "Developed a personal portfolio website to showcase skills and projects, incorporating  responsive design to ensure seamless performance across devices",
    },
   
 ];
+
 
