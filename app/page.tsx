@@ -17,13 +17,13 @@ export default function Home() {
           {/* Name & Profession */}
           <div>
             <h3 className="font-semibold tracking-wider mb-1">
-              Computer Science
+              Web developer
             </h3>
             <h2 className="text-3xl md:text-5xl mb-2 text-white">
               Hello, I&apos;m
             </h2>
             <h1 className="text-lightSky text-5xl md:text-7xl tracking-normal">
-              Memoona Saleem
+              Moazma Amin
             </h1>
           </div>
 
@@ -42,7 +42,7 @@ export default function Home() {
             text-lightSky 
             hover:bg-hoverColor 
             hover:text-black hoverEffect"
-            onClick={() => window.open("resume.pdf", "_blank")}
+            onClick={() => window.open("cv.pdf", "_blank")}
           >
             Download CV <Download />
           </Button>
