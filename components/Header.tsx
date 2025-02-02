@@ -24,7 +24,7 @@ const Header = () => {
        items-center
         justify-between"
       >
-        <Logo title="Memoona" subtitle="." />
+        <Logo title="Moazma" subtitle="." />
 
         <div className="hidden md:inline-flex items-center gap-7 text-sm uppercase tracking-wide font-medium">
           {navbarData?.map((item) => (
@@ -47,7 +47,7 @@ const Header = () => {
           ))}
 
           <Link
-            href="resume.pdf"
+            href="cv.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm bg-lightSky/10 px-4 py-2 rounded-md border border-hoverColor/10 hover:border-hoverColor hover:bg-hoverColor hover:text-black hoverEffect"
